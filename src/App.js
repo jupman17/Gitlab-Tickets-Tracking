@@ -12,7 +12,7 @@ const App = () => {
         sheetId: '1qvfI3js5TPud0JZNtOvoJDzHhLEEi9HZwCAysUFc11Y'
       });
       console.log('Webhook triggered:', response.data);
-      setMessage('Webhook triggered successfully.');
+      setMessage('');
     } catch (error) {
       console.error('Error triggering webhook:', error);
       setMessage('Error triggering webhook.');
