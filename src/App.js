@@ -35,11 +35,21 @@ const App = () => {
     }
   };
 
+  const handleButtonClick = async (e) => {
+    e.preventDefault();
+    await triggerWebhook();
+    await downloadGoogleSheet();
+  };
+
   return (
     <div>
       <h1 style={{textAlign: 'center'}}>Ixpath Gitlab tickets tracking</h1>
-      <button onClick={triggerWebhook}>Enter your gitlab account</button>
-      <button onClick={downloadGoogleSheet}>Download Google Sheet</button>
+      <p>1- Go to <a href="https://eu2.make.com/" target="_blank" rel="noopener noreferrer">Make</a></p>
+      <p>2- Create a Scenario </p>
+      <p>3- Import Blueprints.json file</p>
+      <p>4- Add your gitlab account and your google sheet account</p>
+      <p>5- Save the changes</p>
+      <button onClick={handleButtonClick}> Download google sheet </button>
       {message && <p>{message}</p>}
     </div>
   );
