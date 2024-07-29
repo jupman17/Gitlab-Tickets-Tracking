@@ -1,14 +1,6 @@
-you should open 3 terminals:
-
-FIRST ONE :
-npm install
-/npm start
-
-SECOND ONE:
-cd server
-/npm install
-/node server.js
-
-THIRD ONE:
-ngrok config add-authtoken 2iyFWNZO1Bo3yeLfsBdxgwfpOib_3vzoAcxK6VV82aRKQtdXp
-/ngrok http http://localhost:5000
+Go to make|
+and import the scenario its here in the repisitory : blueprints.json
+after that configure your own changes :
+                  -your account on gitlab
+                  -your account on google sheet
+                  
